@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>ICON GYM</title>
+</head>
+
+<body class="bg-black text-white flex flex-col items-center" >
+    
+        <H1 class="text-3xl sm:text-5xl text-red-700 font-bold text-center flex-grow m-2">GYM</H1>
+        <div class="flex justify-between w-full p-4 flex-wrap">
+            <img src="img/img1.jpg" class="w-[200px] h-[200px] float-right" > 
+            <img src="img/img2.jpg" class="w-[200px] h-[200px]   float-left" > 
+        </div>
+   
+    <div class="w-3/4 text-center">
+        <h2 class="bg-white text-black p-2 font-bold m-2 border-4 rounded ">INTRODUCCIÓN</h2>
+            <p class="text-left m-2">Hola, bienvenido a esta mini introduccion al mundo del pequeño GymBro, en este sitio aprenderás lo basico-medio que
+                se necesita para empezar a entrenar y tener una vida más saludable.En este sitio encontrarás información sobre nutrición, entrenamiento y suplementos, además de un pequeño cuestinario
+                 para poner a prueba tus conocimientos. Adelante, empieza a leer y a aprender.  
+            </p>
+    </div>
+
+
+    <div class="w-3/4 text-center">
+        <section>
+        <h2 class="bg-white text-black p-2 font-bold m-2 border-4 rounded">TEMAS</h2>
+            <h3 class="bg-purple-500 text-black p-2 font-bold m-2 border-1 rounded">NUTRICIÓN <img class="w-[70px] h-[70px]" src="img/img3nutricion.jpg"></h3>
+                <p class="text-left m-2">En este apartado se habla acerca de unos buenos hábitos de comidas saludables además de nutrición avanzada para la pérdida de grasa
+                    y la ganancia de masa muscular, esteblecer esto mo un hábito nos dará mas longevidad y nos evitará muchos problemas que surgen a través de una mala alimentación.
+                 </p>
+                <!--enlace a video de nutricion  --> 
+                <a class=" text-blue-700 hover:text-yellow-500" href="https://www.youtube.com/watch?v=znZax993Mxk&ab_channel=NahuelSaluzzoFit" target="_blank">Pincha aquí para más info</a>
+
+            <h3 class="bg-violet-500 text-black p-2 font-bold m-2 border-1 rounded">ENTRENAMIENTO <img class="w-[70px] h-[70px]" src="img/img5Entrenamiento.jpg"></h3>  
+                <p class="text-left m-2">En este otro apartado se habla acerca de una buena estructuración a la hora de querer empezar a entrenar o para gente que ya
+                    lleve tiempo entrenando pero esté estancada y quiera entender más de rutinas, ejercicios y consejos para mejorar en el entrenamiento.
+                </p>
+                <!--enlace a video de entrenamiento  -->
+                <a class=" text-blue-700 hover:text-yellow-500" href="https://www.youtube.com/watch?v=cNURQOBHWnE&ab_channel=JeremyEthierenEspa%C3%B1ol ">Pincha aquí para más info</a>
+
+            <h3 class="bg-violet-800 text-black p-2 font-bold m-2 border-1 rounded">SUPLEMENTOS <img class="w-[70px] h-[70px]" src="img/img4Suplementos.avif"></h3>
+                <p class="text-left m-2">En este ultimo apartado se habla acerca de lo que mucha gente llama "esteroides legales". Existe esta creencia de que si consumes suplementos pues 
+                    ya eres un denominado "chuzao" cuando en realidad no es así, en este apartado se habla acerca de los suplementos que existen para complementar
+                    nuestra dieta y además de ayudarnos a mejorar en el rendimiento deportivo, nos pueden ayudar a mejorar nuestra salud en general.
+                </p>
+                <!--enlace a video de suplementos  -->
+                <a class=" text-blue-700 hover:text-yellow-500 " href="https://www.youtube.com/watch?v=7iRtbyYJpPc&ab_channel=AndresVazquezPersonalTrainer" target="_blank">Pincha aquí para más info</a>
+               
+        </section>
+
+
+        <hr class="m-3">
+        <div class="bg-white text-black font-bold border-4 rounded">¡AHORA ES TU TURNO DE PONER A PRUEBA LOS CONOCIMIENTOS!</div>
+        <hr class="m-3">
+        
+        <!-- Boton para empezar el quiz-->
+        <button id="iniciar" 
+        class="bg-green-500 text-black px-4 py-2 rounded-lg hover:bg-green-700 hover:text-white"
+        onclick="iniciar()">Dale para iniciar My Friend</button>
+
+        <div id="quiz" class="hidden w-full max-w-md mx-auto bg-black p-4 rounded-lg shadow-md">
+            <div id="contador" class="text-base font-semibold mb-4 text-center"></div>
+            <div id="pregunta" class="text-base font-semibold mb-4"></div>
+            <div id="eleccion" class="flex flex-col gap-2"> </div>
+            <p id="resultado" class="text-sm mt-2"></p>
+            <p id="mensajeFinal" class="text-lg font-semibold mt-4"></p>
+
+           
+     <button id="siguiente" onclick="siguientePregunta()"
+     class="w-full bg-gray-600 text-white py-2 px-4 rounded-lg mt-4 hover:bg-gray-800 transition hidden text-sm">Siguiente
+    </button>
+            
+    </div>
+
+    <script src="main.js"></script>
+
+    </div>
+    
+    <footer  class="bg-blue-600 text-white border-3 rounded-lg m-4">
+                <p>Contacta con nosotros para más preguntas en el +346969696969</p>
+
+    </footer>
+</body>
+</html>
